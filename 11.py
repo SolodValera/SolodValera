@@ -43,9 +43,7 @@ def calc():
             return
         res = a / b
     lblres.config(text=f"Ответ: {res}")
-'''
-    messagebox.showinfo("Результат", f"Ответ: {res}")
-'''
+
 
 
 lbl1 = Label(tab1, text='Калькулятор', padx=5, pady=5, font='Arial 14')
@@ -140,6 +138,7 @@ btn_load.grid(column=0, row=1, pady=5)
 
 
 window.mainloop()
+
 
 
 
