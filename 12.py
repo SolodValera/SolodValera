@@ -11,14 +11,14 @@ def zapros():
     polya = ['company', 'created_at', 'email', 'id', 'name', 'url']
     bigstroka = {field: data.get(field) for field in polya}
 
-    # Генерируем имя файла, заменяя '/' на '_' (чтобы избежать проблем с путями)
+   
     filename = f"{name.replace('/', ' ')}.json"
-    # Сохраняем данные в JSON-файл с поддержкой кириллицы и красивым форматированием
+   
     with open(filename, 'w') as fileo:
         json.dump(bigstroka, fileo)
 
 root=Tk()
-# Устанавливаем заголовок окна
+
 root.title("Запрос на GIT")
 
 label1=Label(root, text="Введите имя репозитория (owner/repo):")
@@ -31,3 +31,4 @@ but1.grid(column=3, row=1, padx=10)
 
 
 root.mainloop()
+
